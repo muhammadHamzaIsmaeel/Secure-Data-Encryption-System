@@ -1,105 +1,27 @@
-🔒 Project Overview
-A secure web application built with Streamlit that allows users to:
+# 🔐 Secure Data Encryption System
 
-Encrypt sensitive data with a passkey
+![Project Banner](assets/app-banner.png)
 
-Store encrypted data in memory
+A Streamlit-based web application that provides secure encryption and storage of sensitive data with passkey protection.
 
-Retrieve data only with the correct passkey
+## 🌟 Key Features
 
-Features brute-force protection with login after 3 failed attempts
+| Feature | Description |
+|---------|-------------|
+| 🔒 Military-Grade Encryption | Uses Fernet (AES-128) cryptography |
+| 🔑 Passkey Protection | Data only decrypts with correct passkey |
+| 🛡️ Brute Force Protection | Locks after 3 failed attempts |
+| 💾 In-Memory Storage | No database required |
+| ✨ Intuitive UI | Clean, user-friendly interface |
+| ⏱ Session Management | Tracks active sessions |
 
-🚀 Features
-Military-Grade Encryption: Uses Fernet (AES-128) encryption
+## 🚀 Getting Started
 
-Passkey Protection: Data can only be decrypted with the original passkey
+### Prerequisites
+- Python 3.8 or higher
+- pip package manager
 
-Session Management: Tracks active sessions and failed attempts
-
-Clean UI: User-friendly interface with visual feedback
-
-No Database Needed: Stores everything in memory (session)
-
-🛠️ Installation
-Clone the repository:
-
-bash
-Copy
+### Installation
+1. Clone the repository:
+```bash
 git clone https://github.com/muhammadHamzaIsmaeel/Secure-Data-Encryption-System.git
-cd secure-data-encryption
-Install requirements:
-
-bash
-Copy
-pip install -r requirements.txt
-Run the app:
-
-bash
-Copy
-streamlit run app.py
-📖 How It Works
-Storing Data
-Go to "Store Data" page
-
-Enter:
-
-A unique ID for your data
-
-The sensitive data you want to encrypt
-
-A strong passkey (remember this!)
-
-Click "Encrypt & Save"
-
-Your data is now securely encrypted and stored
-
-Retrieving Data
-Go to "Retrieve Data" page
-
-Enter:
-
-The exact same unique ID
-
-The exact same passkey
-
-Click "Decrypt"
-
-If correct, your original data will appear
-
-Security Features
-After 3 wrong passkey attempts, the system locks
-
-You'll need to login with the master password to continue
-
-All passkeys are hashed before storage
-
-🔐 Default Credentials
-Master Password: admin123 (Change this in production!)
-
-📝 Code Structure
-Copy
-app.py                # Main application file
-requirements.txt      # Python dependencies
-README.md            # This documentation
-💡 Why This Project?
-Learn about real-world encryption implementation
-
-Understand session-based security
-
-See how to build secure web apps with Python
-
-Great template for building your own secure apps
-
-🚨 Important Notes
-This is for educational purposes only - Not for production use without modifications
-
-Data is stored in memory - Will be lost when the app restarts
-
-Change the master password before using for anything serious
-
-👨‍💻 Author
-Muhammad Hamza
-GitHub Profile
-
-📜 License
-MIT License - Feel free to use and modify
